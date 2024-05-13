@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.28474504.css",
+    "main.js": "/portfolio/static/js/main.3382fdd8.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/hi-emoji.gif": "/portfolio/static/media/hi-emoji.6c265c4f43548000b117.gif",
+    "static/media/intersect.png": "/portfolio/static/media/intersect.28372a730950dad2f3f2.png",
+    "static/media/twinkling-bg.png": "/portfolio/static/media/twinkling-bg.59e8281a196009fb315d.png",
+    "static/media/back-glow-1.png": "/portfolio/static/media/back-glow-1.a54c9ee7c29f26b9efee.png",
+    "static/media/home-design.png": "/portfolio/static/media/home-design.c2fd5ca2abba7d869229.png",
+    "static/media/back-glow-2.png": "/portfolio/static/media/back-glow-2.7d0d3da4b5f0fd1e41ca.png",
+    "static/media/ayesha.jpeg": "/portfolio/static/media/ayesha.9e1576f55a299cc8d051.jpeg",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.20ea13a55b163b085a53.pdf",
+    "static/media/mini-ball.png": "/portfolio/static/media/mini-ball.431673c81d3e862f87c9.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/portfolio/index.html",
+    "main.28474504.css.map": "/portfolio/static/css/main.28474504.css.map",
+    "main.3382fdd8.js.map": "/portfolio/static/js/main.3382fdd8.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28474504.css",
+    "static/js/main.3382fdd8.js"
+  ]
+}

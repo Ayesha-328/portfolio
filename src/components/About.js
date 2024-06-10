@@ -1,6 +1,6 @@
 import React from 'react'
 import MiniBall from "../assets/images/mini-ball.png"
-import AboutImage from "../assets/images/ayesha.jpeg"
+import AboutImage from "../assets/images/ayesha-profile-pic.png"
 import DotPattern from "../assets/images/dot-pattern.png"
 import { Link } from 'react-scroll'
 

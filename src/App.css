@@ -19,37 +19,76 @@
     --heading-size: 2.5rem;
     --text-size: 1rem;
 }
-.container{
+
+/* Scrollbar designing */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7400b3e0;
+}
+
+/* Scrollbar designing */
+
+.container {
     overflow-x: hidden;
 }
 
 h1 {
-    color: white;
     font-size: 63px;
     font-family: "Coolvetica";
     font-weight: 400;
     margin-bottom: 25px;
+    background: linear-gradient(74deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #131314 75%, #131314 100%);
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+   
 }
 
 a {
     text-decoration: none;
 }
 
-/* a:hover{
-    color: var(--secondary-color);
-} */
-/* a:visited{
-    color: #790A7B;
-} */
-/* a:active{
-    color: #b344ff;
-} */
+
 /************** Navbar Styling ***************/
 body {
     background-color: var(--background-color);
     color: var(--primary-color);
     position: relative;
     overflow-x: hidden;
+    
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 * {
@@ -68,6 +107,7 @@ a {
     justify-content: center;
     z-index: 200;
 }
+
 
 .nav-container {
     position: relative;
@@ -346,7 +386,7 @@ a {
 }
 
 .social-links .social-icon {
-    color: #000;
+    color: var(--primary-color);
     padding: 5px;
     transition: .3s linear;
 }
@@ -380,7 +420,10 @@ a {
 
 .about-container .img-content .img-wrapper {
     position: relative;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+
+    border: 5px solid #42bfe1;
+    border-radius: 50%;
 }
 
 .about-container .img-content .about-img {
@@ -389,7 +432,9 @@ a {
     width: 360px;
     /* height: 300px; */
     border-radius: 50%;
+    border: 5px dashed var(--secondary-color);
 }
+
 
 
 
@@ -674,7 +719,7 @@ textarea {
     width: 300px;
     right: 150px;
     overflow: hidden;
-    
+
 }
 
 .projects-backglow .dot-pattern {
@@ -689,7 +734,7 @@ textarea {
 .pattern1 {
     top: 150px;
     left: 10%;
-    
+
 }
 
 .pattern2 {
@@ -697,7 +742,7 @@ textarea {
     right: 10%;
     transform: rotate(90deg);
     opacity: 0.8;
-    
+
 }
 
 .projects-slider {
@@ -706,7 +751,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .porjects-slider .swiper {
@@ -727,7 +772,7 @@ textarea {
     position: relative;
     width: 100%;
     height: 100%;
-    
+
 }
 
 .group:hover {
@@ -759,7 +804,7 @@ textarea {
     /* Moved transition property here */
 }
 
-.swiper-slide:hover img {
+.projects-slider .swiper-slide:hover img {
     transform: scale(1.3);
 }
 
@@ -995,7 +1040,7 @@ textarea {
     font-size: 18px;
     background: #fff;
 
-   
+
 }
 
 .certificates-slider .swiper-slide img {
@@ -1004,7 +1049,9 @@ textarea {
     height: 100%;
     object-fit: cover;
 }
-.certificates-slider .swiper-button-prev ,.certificates-slider .swiper-button-next{
+
+.certificates-slider .swiper-button-prev,
+.certificates-slider .swiper-button-next {
     color: var(--secondary-color);
 }
 
@@ -1067,6 +1114,11 @@ textarea {
 
 /**************** Media Queries **************/
 
+@media only screen and (max-width: 870px) {
+    h1{
+        width: 500px;
+    }
+}
 @media only screen and (max-width: 840px) {
 
     /************** Navbar Styling ***************/
@@ -1200,7 +1252,7 @@ textarea {
     }
 
     .about-container .about-content .about-desc {
-       max-width: 90vw;
+        max-width: 90vw;
         font-family: var(--text-font);
         font-size: 15px;
         font-weight: 200;
@@ -1220,10 +1272,8 @@ textarea {
     }
 
     .about-container .about-content svg {
-        left: 30px;
-        bottom: 30px;
+        display: none;
 
-        transform: rotate(90deg);
     }
 
     /************** About Styling ***************/
@@ -1254,12 +1304,12 @@ textarea {
 
     /************** Contact Styling ***************/
 
-   
+
 
 }
 
 @media only screen and (max-width: 550px) {
-    .container{
+    .container {
         min-height: 100vh;
         height: auto;
     }
@@ -1303,7 +1353,7 @@ textarea {
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 44px;
         width: 80vw;
     }
 
@@ -1406,7 +1456,8 @@ textarea {
         font-size: 4rem;
         margin: 0 50px;
     }
-    .contact-container form{
+
+    .contact-container form {
         width: auto;
     }
 
@@ -1443,6 +1494,7 @@ textarea {
         overflow: hidden;
         border-radius: 6px;
     }
+
     .project-title {
         font-size: 28px;
         left: 1.5rem;
@@ -1529,16 +1581,18 @@ textarea {
     }
 
     /************** project Modal Styling ***************/
- /************** Certificates Styling ***************/
- .certificates-slider{
-    width: 85vw;
-    height: 300px;
-}
-.certificates-slider .swiper-slide img{
-    object-fit: contain  ;
+    /************** Certificates Styling ***************/
+    .certificates-slider {
+        width: 85vw;
+        height: 300px;
+    }
 
-}
-/**************Certificates Contact Styling ***************/
+    .certificates-slider .swiper-slide img {
+        object-fit: contain;
+
+    }
+
+    /**************Certificates Contact Styling ***************/
 
 
 

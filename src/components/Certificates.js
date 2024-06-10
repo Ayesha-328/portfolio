@@ -23,7 +23,7 @@ function Certificates() {
   })
   return (
     <div className="certificates-container container" id='certificates'>
-      <h1 className="main-heading">My Certificates</h1>
+      <h2 className="main-heading">My Certificates</h2>
       <div className="projects-backglow">
         {/* <img src={backGlow1} className='backglow-left' alt="" />
         <img src={backGlow2} className='backglow-right' alt="" />

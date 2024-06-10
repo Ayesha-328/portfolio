@@ -9,11 +9,17 @@ import { EffectCoverflow, Pagination } from "swiper/modules"
 import data from './data'
 import { useState } from 'react';
 import Project from './Project';
+import AnimatedLetters from './AnimatedLetters';
+import "./animation.css"
 import DotPattern from "../assets/images/dot-pattern.png"
 
 import ProjectModal from './ProjectModal';
 
+
 function Projects() {
+  const [letterClass, setLetterClass]=useState('text-animate')
+  const pageNameArray=['P','r','o','j','e','c','t','s']
+
   const [modal, setModal] = useState(false);
   const [modalIndex, setModalIndex] = useState(null);
   console.log(modal);
@@ -52,7 +58,9 @@ function Projects() {
   })
   return (
     <div className="projects-container container" id='projects'>
-      <h1 className="main-heading">My Projects</h1>
+      <h2 className="main-heading">
+        My Projects
+          </h2>
       <div className="projects-backglow">
         <img src={backGlow1} className='backglow-left' alt="" />
         <img src={backGlow2} className='backglow-right' alt="" />

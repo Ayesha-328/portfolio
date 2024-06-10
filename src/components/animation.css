@@ -62,17 +62,32 @@
     height: 100vh;
     display: flex;
   } */
+
+  .rotate {
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
   
 .developer {
+  width: 500px;
     font: 100% / 1.5  "Coolvetica";
     color: hsl(230, 100%, 95%);
-    font-size: 40px;
+    font-size: 61px;
     font-weight: 300;
     animation: lights 5s 750ms linear infinite;
     z-index: 100;
     position: relative;
   }
   .developer::before ,.developer::after{
+   
     content: "<h1>";
     font-family: "La Belle Aurore", cursive;
     font-size: 20px;
@@ -84,7 +99,7 @@
   .developer::after {
     content: "</h1>";
     left:0;
-    top: 47px;
+    top: 84px;
     
   }
   .hi{
@@ -93,20 +108,24 @@
 
   @media only screen and (max-width: 889px) {
     .developer {
-      font-size: 35px;
-      width: 80vw;
+      font-size: 53px;
+      width: 85vw;
   }
   }
   @media only screen and (max-width: 750px) {
     .developer {
-      font-size: 35px;
-      width: 80vw;
+      font-size: 43px;
   }
+  .developer::after {
+    top: 66px;
+}
   }
 
   @media only screen and (max-width: 550px){
 .developer {
     font-size: 35px;
-    width: 80vw;
+}
+.developer::after {
+  top: 54px;
 }
 }

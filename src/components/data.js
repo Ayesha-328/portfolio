@@ -107,8 +107,20 @@ export default{
             description: "VanLife is a dynamic React app that harnesses the power of React Router DOM for seamless navigation through various features. This project integrates API data fetching, authentication, and Firebase for robust functionality. Implementing search parameters enables users to filter content efficiently, while MirageJS ensures realistic data simulation for testing purposes.",
             imageUrl: "/vanlife.png",
             type: "React",
-            socialLinks: ["","https://github.com/Ayesha-328/vanlife-react"],
+            socialLinks: ["https://www.linkedin.com/posts/ayesha-najeeb-0a2026269_vanlife-vanlife-reactrouterdom-activity-7183074148099702784-ZSEg?utm_source=share&utm_medium=member_desktop","https://github.com/Ayesha-328/vanlife-react"],
             link:"https://vanliphe.netlify.app"
+        },
+        {
+            id: "11",
+            title: "X Twitter Clone",
+            date: "Aug 2024",
+            tech: ["ReactJS", "Tailwind"],
+            description: "This project is the X (Twitter) homepage clone. I used tailwind css and react in this project. This project really helped in implementing the tailwind CSS knowledge.",
+            imageUrl: "/twitter-clone.png",
+            type: "React",
+            socialLinks: ["https://www.linkedin.com/posts/ayesha-najeeb-0a2026269_webdevelopment-tailwindcss-frontend-activity-7226575471902093312-Q_FS?utm_source=share&utm_medium=member_desktop",
+                "https://github.com/Ayesha-328/XtwitterClone"],
+            link:"https://ayesha-328.github.io/XtwitterClone/"
         }
     
     ]

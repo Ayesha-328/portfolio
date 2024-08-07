@@ -23,7 +23,7 @@ function Nav() {
         document.addEventListener("mousedown", handler)
         // CleanUp function
         return (() => {
-            document.removeEventListener("mousedown", handler)
+            document.removeEventListener("mouseover", handler)
         })
     }, [navOpen])
 
@@ -37,7 +37,7 @@ function Nav() {
                 </div>
 
 
-                <ul className={`${navOpen ? "display-menu" : ""} menu-items`}>
+                <ul className={`${navOpen ? "display-menu" : ""} menu-items`} >
                     <li className="list-item"><Link 
       activeClass="active" 
       to="hero" 

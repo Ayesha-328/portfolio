@@ -1,14 +1,28 @@
-import React from 'react'
+import React ,{useState, useEffect} from 'react'
+import AnimatedLetters from './AnimatedLetters';
+import "./animation.css"
 import MiniBall from "../assets/images/mini-ball.png"
 import AboutImage from "../assets/images/ayesha-profile-pic.png"
 import DotPattern from "../assets/images/dot-pattern.png"
 import { Link } from 'react-scroll'
 
 function About() {
+    const [letterClass, setLetterClass]=useState('text-animate')
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setLetterClass('text-animate-hover');
+        }, 4000);
+      
+        return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+      }, []);
     return (
         <div className="about-container container" id='about'>
             <div className="img-content">
-                <h2 className="main-heading">About Me</h2>
+                <h2 className="main-heading">
+                <AnimatedLetters letterClass={letterClass}
+          strArray={['A','b','o','u','t',' ','M','e']}
+          idx={1}/>
+                </h2>
                 <div className="img-wrapper">
                     <img className='about-img' src={AboutImage} alt="" />
                     <img src={MiniBall} alt="" className="about-mini-ball" />

@@ -1,4 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React ,{useRef, useState, useEffect} from 'react'
+import AnimatedLetters from './AnimatedLetters';
+import "./animation.css"
 import data from './data'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,6 +17,16 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 function Certificates() {
+  const [letterClass, setLetterClass]=useState('text-animate')
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setLetterClass('text-animate-hover');
+        }, 4000);
+      
+        return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+      }, []);
+
+     
 
   const certElement = data.certificates.map(cert=>{
     return  <SwiperSlide>
@@ -22,8 +34,12 @@ function Certificates() {
     </SwiperSlide>
   })
   return (
-    <div className="certificates-container container" id='certificates'>
-      <h2 className="main-heading">My Certificates</h2>
+    <div  className="certificates-container container" id='certificates'>
+      <h2 className="main-heading">
+      <AnimatedLetters letterClass={letterClass}
+          strArray={['M','y',' ','C','e','r','t','i','f','i','c','a','t','e','s']}
+          idx={1}/>
+        </h2>
       <div className="projects-backglow">
         {/* <img src={backGlow1} className='backglow-left' alt="" />
         <img src={backGlow2} className='backglow-right' alt="" />

@@ -1,4 +1,7 @@
-import React from 'react'
+import React ,{useState, useEffect} from 'react'
+import AnimatedLetters from './AnimatedLetters';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "./animation.css"
 
 function Skills() {
     const skillArray=[{
@@ -11,11 +14,11 @@ function Skills() {
     },
     {
         skill: "JavaScript",
-        level: 4
+        level: 5
     },
     {
         skill: "React",
-        level: 4
+        level: 6
     },
     {
         skill: "Python",
@@ -33,6 +36,27 @@ function Skills() {
         skill: "Bootstrap",
         level: 3
     },
+    {
+        skill: "Tailwind",
+        level: 5
+    },
+    {
+        skill: "NodeJS",
+        level: 4
+    },
+    {
+        skill: "SQL",
+        level: 5
+    },
+    {
+        skill: "Express.js",
+        level: 4
+    },
+    {
+        skill: "MongoDB",
+        level: 3
+    },
+
 ]
 
 const skillsElements=skillArray.map((skill,index)=>{
@@ -53,9 +77,24 @@ const skillsElements=skillArray.map((skill,index)=>{
     </div>
     </>
 })
+
+const [letterClass, setLetterClass]=useState('text-animate')
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setLetterClass('text-animate-hover');
+        }, 4000);
+      
+        return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+      }, []);
+
+      
   return (
    <div className="skills-container container" id='skills'>
-    <h2 className="main-heading">My Skills</h2>
+    <h2 className="main-heading"> 
+        <AnimatedLetters letterClass={letterClass}
+          strArray={['M','y',' ','S','k','i','l','l','s']}
+          idx={1}/>
+          </h2>
 
     <div className="skills-section">
     {skillsElements}

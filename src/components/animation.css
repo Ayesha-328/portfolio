@@ -76,7 +76,7 @@
     }
 }
   
-.developer {
+.developer,.intro {
   width: 500px;
     font: 100% / 1.5  "Coolvetica";
     color: hsl(230, 100%, 95%);

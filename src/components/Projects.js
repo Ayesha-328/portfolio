@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, {useState, useEffect } from 'react'
 import backGlow1 from "../assets/images/back-glow-1.png"
 import backGlow2 from "../assets/images/back-glow-2.png"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -7,7 +7,6 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from "swiper/modules"
 import data from './data'
-import { useState } from 'react';
 import Project from './Project';
 import AnimatedLetters from './AnimatedLetters';
 import "./animation.css"
@@ -18,7 +17,13 @@ import ProjectModal from './ProjectModal';
 
 function Projects() {
   const [letterClass, setLetterClass]=useState('text-animate')
-  const pageNameArray=['P','r','o','j','e','c','t','s']
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        setLetterClass('text-animate-hover');
+      }, 4000);
+    
+      return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+    }, []);
 
   const [modal, setModal] = useState(false);
   const [modalIndex, setModalIndex] = useState(null);
@@ -59,7 +64,9 @@ function Projects() {
   return (
     <div className="projects-container container" id='projects'>
       <h2 className="main-heading">
-        My Projects
+      <AnimatedLetters letterClass={letterClass}
+          strArray={['M','y',' ','P','r','o','j','e','c','t','s']}
+          idx={1}/>
           </h2>
       <div className="projects-backglow">
         <img src={backGlow1} className='backglow-left' alt="" />

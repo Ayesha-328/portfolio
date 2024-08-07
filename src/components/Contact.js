@@ -1,4 +1,6 @@
-import React,{ useState } from 'react'
+import React ,{useState, useEffect} from 'react'
+import AnimatedLetters from './AnimatedLetters';
+import "./animation.css"
 import emailjs from '@emailjs/browser';
 import Intersect from '../assets/images/intersect.png'
 import Dots from '../assets/images/contact-dot-pattern.png'
@@ -56,6 +58,14 @@ function Contact() {
             setSubmit(false);
             console.err("Error sending email:",err)});
     }
+    const [letterClass, setLetterClass]=useState('text-animate')
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setLetterClass('text-animate-hover');
+        }, 4000);
+      
+        return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+      }, []);
   return (
     <div className="contact-container container" id='contact'>
         <img className='design-img' src={Intersect} alt="" />
@@ -72,7 +82,11 @@ function Contact() {
                 {submit===null
                 ?
                 <>
-                <div className="main-heading">Contact Me</div>
+                <div className="main-heading">
+                <AnimatedLetters letterClass={letterClass}
+          strArray={['C','o','n','t','a','c','t',' ','M','e']}
+          idx={1}/>
+                </div>
         <form action={<FormMessage/>} onSubmit={handlesubmit}>
             <label htmlFor="name">Name:
             </label>

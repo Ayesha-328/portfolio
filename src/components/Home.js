@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import HiEmoji from "../assets/images/hi-emoji.gif"
 import HomeDesign from '../assets/images/home-design.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import Resume from "../assets/resume.pdf"
@@ -15,8 +15,18 @@ import "./bg.scss"
 
 function Home() {
   const [letterClass, setLetterClass]=useState('text-animate')
-  const nameArray=['y','e','s','h','a']
-  const jobArray=['F','r','o','n','t','e','n','d',' ','D','e','v','e','l','o','p','e','r']
+  // const hiArray=['H','i',',','I',"'","m"]
+  // const nameArray=['y','e','s','h','a']
+  const jobArray=['W','e','b',' ','D','e','v','e','l','o','p','e','r']
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+  
+    return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+  }, []);
+  
   return (
     <>
       <div className="home-container container" id='hero'>
@@ -31,14 +41,28 @@ function Home() {
         <div className="home-content">
         
             <img className='hi' src={HiEmoji} alt="" />
-          <h1 > Hi! I'm 
-            <img src={A} alt="A" width="70" height="70" />
-            yesha 
+          <h1 className='intro'>
+            <span className={`${letterClass} _2`}>H</span>
+            <span className={`${letterClass} _4`}>i,</span>
+            <span className={`${letterClass} _5`}>I</span>
+            <span className={`${letterClass} _6`}>m</span>
+            {/* <AnimatedLetters letterClass={letterClass}
+          strArray={hiArray}
+          idx={1}/> */}
+            <img src={A} className='initialLetter' alt="A"  />
+            {/* <AnimatedLetters letterClass={letterClass}
+          strArray={nameArray}
+          idx={7}/> */}
+          <span className={`${letterClass} _8`}>y</span>
+            <span className={`${letterClass} _9`}>e</span>
+            <span className={`${letterClass} _10`}>s</span>
+            <span className={`${letterClass} _11`}>h</span>
+            <span className={`${letterClass} _12`}>a</span>
             </h1>
           <h3 className='developer'>
           <AnimatedLetters letterClass={letterClass}
           strArray={jobArray}
-          idx={3}/>
+          idx={13}/>
           </h3>
 
           {/* <div className="description">
@@ -61,7 +85,7 @@ function Home() {
             <div className="gradient-box" id="box2"></div>
             <div className="gradient-box" id="box3"></div>
             <div className="gradient-box" id="box4"></div>
-            <img className='design-image rotate' src={HomeDesign} alt="" />
+            <img className='design-image' src={HomeDesign} alt="" />
           </div>
 
           <a href={Resume} download >
@@ -84,8 +108,12 @@ function Home() {
             <FontAwesomeIcon className='social-icon' icon={faGithub} />
 
           </Link>
-          <Link target='_blank' to="">
+          <Link target='_blank' to="https://www.instagram.com/ayesha__najeeb?igsh=ampweHMzNnczZDZ5">
             <FontAwesomeIcon className='social-icon' icon={faInstagram} />
+
+          </Link>
+          <Link target='_blank' to="https://x.com/ayesh_najeeb">
+            <FontAwesomeIcon className='social-icon' icon={faXTwitter} />
 
           </Link>
         </div>

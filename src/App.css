@@ -1047,7 +1047,7 @@ textarea {
 .certificates-container {
     width: 100%;
     height: 100vh;
-    padding: 0 7%;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1057,7 +1057,6 @@ textarea {
 }
 
 .certificates-container .main-heading {
-    font-size: 60px;
     font-weight: 500;
     margin-bottom: 10vh;
 }
@@ -1160,6 +1159,9 @@ textarea {
     }
 }
 @media only screen and (max-width: 840px) {
+    .main-heading{
+        font-size: 3rem;
+    }
 
     /************** Navbar Styling ***************/
     .nav-container .toggle-btn {
@@ -1236,8 +1238,13 @@ textarea {
 
     }
 
-    h1 {
+    h1.intro{
         font-size: 50px
+    }
+    .initialLetter {
+        top: 10px;
+        width: 80px;
+        height: 78px;
     }
 
     .sub-heading {
@@ -1275,7 +1282,6 @@ textarea {
     }
 
     .about-container .img-content .main-heading {
-        font-size: 4rem;
         position: static;
         order: 2;
     }
@@ -1349,6 +1355,13 @@ textarea {
 }
 
 @media only screen and (max-width: 550px) {
+    .main-heading{
+        font-size: 3rem;
+    }
+    .certificates-container .main-heading{
+        font-size: 2.7rem;
+    }
+
     .container {
         min-height: 100vh;
         height: auto;
@@ -1373,7 +1386,7 @@ textarea {
     .home-container {
         overflow: hidden;
     }
-
+    
     .home-container .home-content {
         position: relative;
         bottom: 10vh;
@@ -1392,9 +1405,15 @@ textarea {
         padding-left: 30px;
     }
 
-    h1 {
+    h1.intro {
         font-size: 44px;
         width: 80vw;
+    }
+    .initialLetter {
+        top: 9px;
+        margin-left: 9px;
+        width: 46px;
+        height: 64px;
     }
 
     .social-links {
@@ -1493,7 +1512,7 @@ textarea {
     /************** Contact Styling ***************/
     .contact-container .main-heading {
         text-align: end;
-        font-size: 4rem;
+        font-size: 2.8rem;
         margin: 0 50px;
     }
 

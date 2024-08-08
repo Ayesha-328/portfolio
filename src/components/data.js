@@ -4,7 +4,7 @@ export default{
             id: "1",
             title: "My Friendly Desktop",
             date: "December 2022",
-            tech: ["Pyton", "Tkinkter", "OpenCV", "DeepFace"],
+            tech: ["Python", "Tkinkter", "OpenCV", "DeepFace"],
             description: "MY FRIENDLY DESKTOP is a machine learning-based desktop application that analyzes the user's emotions through the device's camera and dynamically changes the wallpaper of the screen according to the user's mood. Not only that, but it also features an interface displaying uplifting quotes, aimed at combating loneliness and depression.",
             imageUrl: "/my-friendly-desktop.png",
             type: "python",

@@ -26,7 +26,7 @@ function ProjectModal({project,handleClose}) {
                   {project.socialLinks[0] && 
                   <Link to={project.socialLinks[0]} target="_blank">
                   <li className="modal-link-item">
-                    <FontAwesomeIcon className='link-icon' icon={faGithub} />
+                    <FontAwesomeIcon className='link-icon' icon={faLinkedin} />
                     <span>LinkedIn post</span>
                   </li>
                   </Link>
@@ -35,7 +35,7 @@ function ProjectModal({project,handleClose}) {
                   {project.socialLinks[1] &&
                   <Link to={project.socialLinks[1]} target="_blank">
                   <li className="modal-link-item">
-                    <FontAwesomeIcon className='link-icon' icon={faLinkedin} />
+                    <FontAwesomeIcon className='link-icon' icon={faGithub} />
                     <span>Github repo</span>
                   </li>
                   </Link>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.823730f7.css",
-    "main.js": "/portfolio/static/js/main.70b79e8e.js",
+    "main.js": "/portfolio/static/js/main.b7c15e61.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/hi-emoji.gif": "/portfolio/static/media/hi-emoji.6c265c4f43548000b117.gif",
     "static/media/intersect.png": "/portfolio/static/media/intersect.28372a730950dad2f3f2.png",
@@ -9,18 +9,18 @@
     "static/media/back-glow-1.png": "/portfolio/static/media/back-glow-1.a54c9ee7c29f26b9efee.png",
     "static/media/home-design.png": "/portfolio/static/media/home-design.c2fd5ca2abba7d869229.png",
     "static/media/back-glow-2.png": "/portfolio/static/media/back-glow-2.7d0d3da4b5f0fd1e41ca.png",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.06b7bf67dee5b3b4d0aa.pdf",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.029f37ffd32a4adcdf61.pdf",
     "static/media/ayesha-profile-pic.png": "/portfolio/static/media/ayesha-profile-pic.5ef75f4d5bc892020a71.png",
     "static/media/ayesha_logo.png": "/portfolio/static/media/ayesha_logo.77983ad9be1b86d844fc.png",
     "static/media/mini-ball.png": "/portfolio/static/media/mini-ball.431673c81d3e862f87c9.png",
     "static/media/CoolveticaRg-Regular.woff2": "/portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/portfolio/index.html",
     "main.823730f7.css.map": "/portfolio/static/css/main.823730f7.css.map",
-    "main.70b79e8e.js.map": "/portfolio/static/js/main.70b79e8e.js.map",
+    "main.b7c15e61.js.map": "/portfolio/static/js/main.b7c15e61.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.823730f7.css",
-    "static/js/main.70b79e8e.js"
+    "static/js/main.b7c15e61.js"
   ]
 }

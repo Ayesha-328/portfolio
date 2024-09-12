@@ -100,7 +100,7 @@ function Home() {
         </div>
 
         <div className="social-links">
-          <Link target='_blank' to="https://www.linkedin.com/in/ayesha-najeeb-0a2026269/">
+          <Link target='_blank' to="www.linkedin.com/in/ayesha328">
 
             <FontAwesomeIcon className='social-icon' icon={faLinkedinIn} />
           </Link>

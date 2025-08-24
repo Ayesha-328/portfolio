@@ -1300,7 +1300,7 @@ textarea {
     .about-container .about-content .about-desc {
         max-width: 90vw;
         font-family: var(--text-font);
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 200;
         letter-spacing: 0.05em;
         line-height: 1.5;

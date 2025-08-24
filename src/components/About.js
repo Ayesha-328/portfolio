@@ -42,7 +42,13 @@ function About() {
                     <path d="M31.824 68.2916V80.7083H143L114.894 100.842L127.157 109.62L176.176 74.4999L127.157 39.3794L114.894 48.158L143 68.2916H31.824Z" fill="#FA00FF" />
                 </svg></Link>
 
-                <p className="about-desc">Meet Ayesha, a dedicated Software Engineering student at NED University, with a fervent passion for web development. Specializing in React.js, HTML, CSS, and JavaScript, Ayesha possesses a strong foundation in building dynamic digital solutions. Proficient in languages like C++ and Python, she tackles coding challenges with ease. Ayesha's meticulous attention to detail, coupled with her commitment to staying updated with industry trends, ensures that every project she undertakes is not only visually striking but also optimized for peak performance. </p>
+                <p className="about-desc">Hi, I’m Ayesha — a final-year Software Engineering student at NED University, passionate about AI and full-stack development. I enjoy turning ideas into real-world solutions, whether that’s building AI-powered apps, designing scalable platforms, or experimenting with new technologies just to see what’s possible.
+                    <br/>
+
+Over the past few years, I’ve gained experience through internships at Weaves Corporation Ltd (KAADI) and GAOTek, where I worked on projects ranging from digital customer solutions to global web development. Alongside that, I’ve built projects, each one teaching me something new about problem-solving, clean code, and building tech that feels human, not complicated.
+                    <br/>
+
+I’m skilled in the MERN & PERN stacks, JavaScript/TypeScript, SQL, Python, C++, and more, with hands-on experience in tools like Azure AI, Streamlit, and Tailwind CSS. But beyond the tools, I bring curiosity, collaboration, and a drive to keep learning — because that’s what keeps me growing as a developer. </p>
                 <Link 
       activeClass="active" 
       to="contact" 
